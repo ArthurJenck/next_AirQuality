@@ -42,7 +42,12 @@ const InfosHeader = ({ cityData }: cityDataProps) => {
 
     return (
         <div className="infos-header">
-            <Image src={feelingIcon} alt="feeling icon" />
+            <Image
+                src={feelingIcon}
+                alt="feeling icon"
+                height={100}
+                width={100}
+            />
             <p>Here are the {cityData.city} informations.</p>
         </div>
     )
