@@ -2,8 +2,11 @@ import Image from "next/image"
 import React from "react"
 import pointer from "@/../public/location.svg"
 import "./Scale.scss"
+import { cityDataProps } from "../InfosBlock/InfosBlock"
 
-const Scale = () => {
+const Scale = ({ cityData }: cityDataProps) => {
+    console.log(cityData)
+
     return (
         <div className="scale">
             <p>Pollution scale :</p>
