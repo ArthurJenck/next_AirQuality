@@ -1,6 +1,6 @@
 import React from "react"
 import "./InfosTable.scss"
-import { cityDataProps } from "../InfosBlock/InfosBlock"
+import { cityDataProps } from "@/app/page"
 
 const InfosTable = ({ cityData }: cityDataProps) => {
     return (

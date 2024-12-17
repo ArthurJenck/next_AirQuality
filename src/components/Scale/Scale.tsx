@@ -2,7 +2,7 @@ import Image from "next/image"
 import React, { useEffect, useRef } from "react"
 import pointer from "@/../public/location.svg"
 import "./Scale.scss"
-import { cityDataProps } from "../InfosBlock/InfosBlock"
+import { cityDataProps } from "@/app/page"
 
 const Scale = ({ cityData }: cityDataProps) => {
     const ref = useRef<HTMLImageElement>(null)

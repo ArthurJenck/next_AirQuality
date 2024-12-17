@@ -9,7 +9,7 @@ import maskIcon from "@/../public/mask.svg"
 import terribleIcon from "@/../public/terrible.svg"
 
 import "./InfosHeader.scss"
-import { cityDataProps } from "../InfosBlock/InfosBlock"
+import { cityDataProps } from "@/app/page"
 
 const InfosHeader = ({ cityData }: cityDataProps) => {
     const [feelingIcon, setFeelingIcon] = useState(loupeIcon)
@@ -22,7 +22,7 @@ const InfosHeader = ({ cityData }: cityDataProps) => {
             case "thinking":
                 setFeelingIcon(thinkingIcon)
                 break
-            case "unhealthyIcon":
+            case "unhealthy":
                 setFeelingIcon(unhealthyIcon)
                 break
             case "bad":
@@ -47,6 +47,7 @@ const InfosHeader = ({ cityData }: cityDataProps) => {
                 alt="feeling icon"
                 height={100}
                 width={100}
+                priority
             />
             <p>Here are the {cityData.city} informations.</p>
         </div>
