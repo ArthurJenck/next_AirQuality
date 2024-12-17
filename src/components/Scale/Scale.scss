@@ -1,0 +1,51 @@
+.scale {
+    p {
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+    }
+
+    .scale-bar {
+        width: 100%;
+        display: flex;
+        position: relative;
+
+        img {
+            position: absolute;
+            left: -1rem;
+            width: 2rem;
+            height: auto;
+            margin-top: 0.6rem;
+            transform: rotate(180deg);
+            transition: transform 0.4s ease-out;
+        }
+
+        .scale-section {
+            height: 0.6rem;
+            flex-grow: 1;
+            background-color: red;
+            &:not(:last-child) {
+                border-right: 2px solid #f1f1f1;
+            }
+            &:nth-child(2) {
+                background-color: green;
+            }
+            &:nth-child(3) {
+                background-color: #d7d703;
+            }
+            &:nth-child(4) {
+                background-color: orange;
+            }
+            &:nth-child(5) {
+                background-color: red;
+            }
+            &:nth-child(6) {
+                flex-grow: 2;
+                background-color: purple;
+            }
+            &:nth-child(7) {
+                flex-grow: 4;
+                background-color: maroon;
+            }
+        }
+    }
+}

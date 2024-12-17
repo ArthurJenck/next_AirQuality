@@ -1,0 +1,16 @@
+main {
+    .app-container {
+        padding: 3rem 0.7rem 0;
+    }
+
+    h1 {
+        font-family: Roboto, sans-serif;
+        text-align: center;
+        font-size: 4.5rem;
+        margin-bottom: 3rem;
+        text-transform: uppercase;
+        color: #f1f1f1;
+        text-shadow: 1px 1px 0 #333, 1px 1px 0 #3a3a3a, 1px 1px 0 #575757,
+            1px 1px 0 #6b6b6b;
+    }
+}
