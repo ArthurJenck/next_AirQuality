@@ -28,7 +28,7 @@ export default function Home() {
     const getPollutionData = async () => {
         try {
             const fetchedData = await fetch(
-                "http://api.airvisual.com/v2/nearest_city?key=45e8a9a0-ba85-411b-a0d8-4a1cfc00e42b"
+                "https://api.airvisual.com/v2/nearest_city?key=45e8a9a0-ba85-411b-a0d8-4a1cfc00e42b"
             ).then((res) => res.json())
 
             const aqi = await fetchedData.data.current.pollution.aqius
